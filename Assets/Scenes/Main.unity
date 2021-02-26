@@ -1821,6 +1821,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992424875}
     m_Modifications:
+    - target: {fileID: 471614236112388377, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54edbcc7fe26f1c41ad9cee85ca7a38b, type: 2}
     - target: {fileID: 6357011157966970450, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
       propertyPath: m_Name
       value: Turista_02
@@ -4086,6 +4090,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992424875}
     m_Modifications:
+    - target: {fileID: 471614236112388377, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5e6094459c70858419a24ab4ed883403, type: 2}
     - target: {fileID: 6357011157966970450, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
       propertyPath: m_Name
       value: Turista _03
@@ -4160,6 +4168,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1992424875}
     m_Modifications:
+    - target: {fileID: 471614236112388377, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e6d326502ba1cff448743110028e1eeb, type: 2}
     - target: {fileID: 1329477018258160785, guid: 82a3f7b223bfbd94a8d05b7d5fe338eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
@@ -4772,7 +4784,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1739567023}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 183409556}
+        m_TargetAssemblyTypeName: Canvas_Manager, Assembly-CSharp
+        m_MethodName: ChangePanel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 492188101}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1739567023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5378,7 +5402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1992424875
 Transform:
   m_ObjectHideFlags: 0
