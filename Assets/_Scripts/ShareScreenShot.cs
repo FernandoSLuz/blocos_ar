@@ -18,11 +18,11 @@ public class ShareScreenShot : MonoBehaviour
         screenShot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
         screenShot.Apply();
 
-        string filePath = Path.Combine(Application.temporaryCachePath, "Shared Image.png");
+        string filePath = Path.Combine(Application.temporaryCachePath, "MuseuDaImaginação.png");
         File.WriteAllBytes(filePath, screenShot.EncodeToPNG());
 
         Destroy(screenShot);
 
-        new NativeShare().AddFile(filePath).SetSubject("Interação AR").SetText("Olha minha foto bacana").Share();
+        new NativeShare().AddFile(filePath).SetSubject("Selfie").SetText("Veja a foto que tirei no Museu da Imaginação!").Share();
     }
 }
