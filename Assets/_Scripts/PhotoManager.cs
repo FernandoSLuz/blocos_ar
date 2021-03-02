@@ -21,7 +21,7 @@ public class PhotoManager : MonoBehaviour
     public void SelectCharacter(int index)
     {
         photoCanvas.GetComponent<PhotoCanvas>().character.sprite = Characters[index -1];
-        ToggleScreens(1);
+        //ToggleScreens(1);
     }
 
     public void ToggleScreens(int index)

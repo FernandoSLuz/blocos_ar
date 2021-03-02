@@ -7,6 +7,7 @@ public class Experience_Manager : MonoBehaviour
     public static Experience_Manager instance;
 	public Experience_States experience_state = Experience_States.menu;
 	public GameObject scan_image;
+	public static bool started = false;
 	private void Awake()
 	{
 		instance = this;
@@ -17,8 +18,13 @@ public class Experience_Manager : MonoBehaviour
 		Canvas_Manager.instance.ChangePanel(Canvas_Manager.instance.ar_panel);
 		scan_image.SetActive(true);
 	}
-	public void Go_To_Selfie(){
+	public void Go_To_Selfie()
+	{
 		SceneManager.LoadScene("Selfie");
+	}
+	public void Go_To_Menu()
+	{
+		SceneManager.LoadScene("Main");
 	}
 	public void End_Ar()
 	{
