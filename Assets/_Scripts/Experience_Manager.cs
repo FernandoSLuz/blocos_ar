@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Experience_Manager : MonoBehaviour
 {
     public static Experience_Manager instance;
@@ -16,6 +16,9 @@ public class Experience_Manager : MonoBehaviour
 		experience_state = Experience_States.detecting;
 		Canvas_Manager.instance.ChangePanel(Canvas_Manager.instance.ar_panel);
 		scan_image.SetActive(true);
+	}
+	public void Go_To_Selfie(){
+		SceneManager.LoadScene("Selfie");
 	}
 	public void End_Ar()
 	{
