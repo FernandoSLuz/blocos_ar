@@ -25,21 +25,15 @@ public class Experience_Manager : MonoBehaviour
 	}
 	public void Target_Detected(GameObject target)
 	{
-		if (experience_state == Experience_States.detecting)
-		{
-			experience_state = Experience_States.detected;
-			scan_image.SetActive(false);
-			target.SetActive(true);
-		}
+		experience_state = Experience_States.detected;
+		scan_image.SetActive(false);
+		target.SetActive(true);
 	}
 	public void Target_Lost(GameObject target)
 	{
 		target.SetActive(false);
-		if (experience_state == Experience_States.detected)
-		{
-			scan_image.SetActive(true);
-			experience_state = Experience_States.detecting;
-		}
+		scan_image.SetActive(true);
+		experience_state = Experience_States.detecting;
 	}
 
 	[System.Serializable]
