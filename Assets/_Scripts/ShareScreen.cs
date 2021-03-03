@@ -10,6 +10,6 @@ public class ShareScreen : MonoBehaviour
 
     public void ShareScreenShot()
     {
-        new NativeShare().AddFile(filePath).SetSubject("Interação AR").SetText("Olha minha foto bacana").Share();
+        new NativeShare().AddFile(filePath).SetSubject("Museu da Imaginação").SetText("Veja como ficou minha foto no Museu da Imaginação!").Share();
     }
 }
