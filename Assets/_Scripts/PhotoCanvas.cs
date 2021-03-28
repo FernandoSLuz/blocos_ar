@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PhotoCanvas : MonoBehaviour
 {
-    public Image character;
+    public SpriteRenderer character;
     public ShareScreen share;
     public GameObject screenShotButton;
 

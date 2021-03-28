@@ -21,6 +21,7 @@ public class PhotoManager : MonoBehaviour
     public void SelectCharacter(int index)
     {
         photoCanvas.GetComponent<PhotoCanvas>().character.sprite = Characters[index -1];
+        photoCanvas.GetComponent<PhotoCanvas>().character.gameObject.SetActive(true);
         //ToggleScreens(1);
     }
 
@@ -29,6 +30,7 @@ public class PhotoManager : MonoBehaviour
         for (int i = 0; i < Screens.Length; i++)
         {
             Screens[i].SetActive(i == index);
+            photoCanvas.GetComponent<PhotoCanvas>().character.gameObject.SetActive(true);
         }
     }
 }
