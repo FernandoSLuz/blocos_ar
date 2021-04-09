@@ -517,7 +517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 917560463}
   fit: {fileID: 917560462}
-  frontFacing: 1
+  frontFacing: 0
 --- !u!1 &332151461
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2652,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 8727ee176ad116a4489cc7eab0450e85, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
