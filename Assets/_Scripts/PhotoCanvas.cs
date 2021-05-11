@@ -9,9 +9,11 @@ public class PhotoCanvas : MonoBehaviour
     public SpriteRenderer character;
     public ShareScreen share;
     public GameObject screenShotButton;
+    public AudioSource audioSource;
 
     public void TakeScreenShot()
     {
+        audioSource.Play();
         screenShotButton.SetActive(false);
         StartCoroutine(TakeScreenShotRoutine());
     }
